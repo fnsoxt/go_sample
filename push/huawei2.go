@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	huawei "github.com/stevelee-me/huaweiPush"
+	huawei "go_sample/huaweiPush"
 )
 
 func main() {
