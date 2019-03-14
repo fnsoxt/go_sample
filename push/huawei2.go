@@ -14,10 +14,10 @@ func main() {
 	// accessToken := client.GetToken()
 	// fmt.Println("accessToken", accessToken)
 
-	token := "0861331032881895300000533500CN01"
+	token := []string{"0861331032881895300000533500CN01", "111"}
 	payload := huawei.NewMessage().SetContent("huawei-content").SetTitle("huawei-title").SetIntent("com://hzhu.m.logo/openwith?link=%s&push_id=%s").SetAppPkgName("com.hzhu.m").Json()
 	fmt.Println(payload)
-	result := client.PushMsg(token, payload)
+	result, _ := client.PushMsgList(token, payload)
 	fmt.Println("result", result)
 }
 
