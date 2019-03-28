@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	huawei "go_sample/huaweiPush"
+	huawei "haohaozhu.com/go_sample/huaweiPush"
 )
 
 func main() {
@@ -20,4 +20,3 @@ func main() {
 	result, _ := client.PushMsgList(token, payload)
 	fmt.Println("result", result)
 }
-
