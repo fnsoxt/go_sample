@@ -1,5 +1,7 @@
 module haohaozhu.com/go_sample
 
+go 1.14
+
 require (
 	github.com/Shopify/sarama v1.21.0 // indirect
 	github.com/bsm/sarama-cluster v2.1.15+incompatible
